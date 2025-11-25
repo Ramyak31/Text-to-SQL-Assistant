@@ -1,6 +1,6 @@
 ### Text-to-SQL Assistant
 
-*** Overview ***
+### Overview 
 
 Text-to-SQL Assistant is a mini LLM project where I fine-tuned the Qwen 1.5B model using LoRA to convert plain English questions into valid SQL queries.
 
@@ -10,7 +10,7 @@ It lets non-technical users interact with a database simply by typing questions 
 The project uses the Gretel Synthetic Text-to-SQL dataset and includes full training, evaluation, and inference workflows.
 
 
-*** Tech Stack ***
+### Tech Stack 
 
 Model: Qwen-1.5B
 Fine-tuning: LoRA 
@@ -19,14 +19,14 @@ Dataset: gretelai/synthetic_text_to_sql
 Runtime: Python, Google colab
 Hardware: T4 GPU
 
-*** Training & Evaluation ***
+### Training & Evaluation 
 
 1. Baseline accuracy before fine-tune: low
 2. After LoRA fine-tuning: significant improvement in structure & correctness
 3. Model produces cleaner SELECT, WHERE, ORDER BY clauses
 4. Able to handle multi-condition queries and aggregation
 
-*** Example Output ***
+### Example Output 
 
 Input: 
 “List all employees hired after 2020 who work in the Finance department.”
